@@ -1,0 +1,60 @@
+body {
+  font-family: "Open sans", sans-serif;
+}
+.contenedor-general {
+  background-color: #c2e7da;
+}
+.senyor {
+  background-color: #6290c3;
+  border-radius: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+.senyor:hover .icono,
+.senyor.marcado .icono {
+  display: block;
+}
+.senyor .avatar img {
+  transition: transform 0.3s;
+}
+.senyor:hover .avatar img,
+.senyor.marcado .avatar img {
+  transform: scaleX(-1);
+}
+.avatar {
+  border-right: 2px dashed #fff;
+  position: relative;
+  flex: 0 185px;
+}
+.inicial {
+  position: absolute;
+  background-color: #600;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  line-height: 50px;
+  bottom: -9px;
+  right: 2px;
+}
+.datos li {
+  margin-top: 10px;
+}
+.icono {
+  color: #fff;
+  background-color: #060;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  line-height: 35px;
+  text-align: center;
+  display: none;
+}
+.senyor-molde {
+  display: none;
+}
